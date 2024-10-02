@@ -5,5 +5,7 @@ import com.project.uber.uberApp.entities.WalletTransaction;
 
 public interface WalletTransactionService {
 
-    void createNewWalletTransaction(WalletTransactionDto walletTransactionDto);
+
+
+    void createNewWalletTransaction(WalletTransaction walletTransaction);
 }
