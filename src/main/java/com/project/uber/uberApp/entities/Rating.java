@@ -4,15 +4,17 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(indexes = {
-        @Index(name = "idx_rating_rider", columnList = "rider_id"),
-        @Index(name = "idx_rating_driver", columnList = "driver_id")
-})
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+
+@Table(indexes = {
+        @Index(name= "idx_rating_rider" , columnList = "rider_id"),
+        @Index(name= "idx_rating_driver" , columnList = "driver_id"),
+
+})
 public class Rating {
 
     @Id
